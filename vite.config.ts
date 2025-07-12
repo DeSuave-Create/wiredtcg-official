@@ -4,8 +4,6 @@ import path from "path";
 import { componentTagger } from "lovable-tagger";
 
 export default defineConfig(({ mode }) => ({
-  // dev: absolute "/"
-  // prod: relative "./" so assets load correctly on GitHub Pages
   base: mode === "production" ? "./" : "/",
 
   server: {
